@@ -9,6 +9,8 @@ const lengthbeatsContainer = beatsContainer.children.length;
 const buttonStart = $("#start-timer");
 const buttonStop = $("#stop-timer");
 
+const audio = new Audio('./src/audio/metronome.mp3');
+
 let intervalId;
 let index = 0;
 
@@ -18,7 +20,8 @@ const createBeat = function () {
       index = 0;
     }
     removeClass();
-    beatsContainer.children[index].classList.add("press");
+    beatsContainer.children[index].classList.add("press");    
+    audio.play();
     index++;
   }, 1000);
   return intervalId;
@@ -44,3 +47,5 @@ function removeClass() {
     }
   });
 }
+
+
