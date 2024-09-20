@@ -1,4 +1,4 @@
-# Chess with Vanilla JS
+# Metronome with vanilla js
 <div align="center">   
   <a href="https://metronome-js.vercel.app/">
         ✨ Open project ✨
